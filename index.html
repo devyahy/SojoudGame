@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="موقع خاص لسجود 💗">
+    <title>لسجود الحلوه 💗</title>
+    
+    <!-- Google Font: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" aria-hidden="true">
+        <div class="heart heart-1">💗</div>
+        <div class="heart heart-2">💕</div>
+        <div class="heart heart-3">💗</div>
+        <div class="heart heart-4">💕</div>
+        <div class="heart heart-5">💗</div>
+        <div class="heart heart-6">💕</div>
+    </div>
+
+    <!-- Mini Navigation -->
+    <nav class="mini-nav">
+        <div class="nav-logo">💗</div>
+        <span class="nav-title">لسجود الحلوه</span>
+    </nav>
+
+    <!-- ===== SCREEN 1: Welcome ===== -->
+    <section id="screen-welcome" class="screen active">
+        <div class="card card-welcome">
+            <h1 class="headline">أهلًا سجود 💗</h1>
+            <p class="subtext">
+                أولا صباح الخيرر!!!!!!<br>
+                ثانيا، سويت موقع كيوت هيك زيك بما انو ما نمت... اعتبريه اعتذار على اني ما نفذت اوامرك 😏
+            </p>
+            <button class="btn btn-primary" data-navigate="screen-love">ابدأ</button>
+            <p class="tiny-note">ملاحظة: انا مو مازوخي بس احبك… </p>
+        </div>
+    </section>
+
+    <!-- ===== SCREEN 2: Love Question ===== -->
+    <section id="screen-love" class="screen">
+        <div class="card card-love">
+            <h1 class="headline">يحيى بحبك! 💘</h1>
+            <p class="question-text">بتحبي يحيى?</p>
+            <p class="helper-text">إذا بتكبسي لا بفجرك</p>
+            
+            <div class="buttons-row" id="love-buttons">
+                <button class="btn btn-primary" id="btn-yes">نعم</button>
+                <button class="btn btn-secondary" id="btn-no">لا</button>
+            </div>
+            
+            <div id="love-response" class="love-response hidden"></div>
+            <button class="btn btn-primary hidden" id="btn-love-next" data-navigate="screen-memories">التالي</button>
+        </div>
+        
+        <!-- Confetti container -->
+        <div id="confetti-container" class="confetti-container"></div>
+    </section>
+
+    <!-- ===== SCREEN 3: Memories ===== -->
+    <section id="screen-memories" class="screen">
+        <div class="card card-memories">
+            
+            <!-- Memory Page 1 -->
+            <div class="memory-page active" data-page="1">
+                <h2 class="memory-title">البعض من عشوائيات سوسو</h2>
+                <p class="memory-subtitle">(ما بقعد اشوفهن 24 ساعة باليوم ابدا)</p>
+                <div class="memory-grid">
+                    <div class="memory-item"><img src="assets/memories/MiniSojoudCute.jpg" alt="ذكرى 1"></div>
+                    <div class="memory-item"><img src="assets/memories/SojoudEyesWithCat1.JPG" alt="ذكرى 2"></div>
+                    <div class="memory-item"><img src="assets/memories/SojoudInBlack1.jpg" alt="ذكرى 3"></div>
+                    <div class="memory-item"><img src="assets/memories/SojoudInBeach.jpg" alt="ذكرى 4"></div>
+                    <div class="memory-item"><img src="assets/memories/SojoudInDarkBlue.jpg" alt="ذكرى 5"></div>
+                    <div class="memory-item"><img src="assets/memories/SojoudYay.JPG" alt="ذكرى 6"></div>
+                    <div class="memory-item"><img src="assets/memories/ScarySojoud.JPG" alt="ذكرى 7"></div>
+                    <div class="memory-item"><img src="assets/memories/MiniSojoudSmile.JPG" alt="ذكرى 8"></div>
+                </div>
+            </div>
+            
+            <!-- Memory Page 2 -->
+            <div class="memory-page" data-page="2">
+                <h2 class="memory-title">شوفلي الجمالللللل 💗</h2>
+                <div class="memory-single">
+                    <img src="assets/memories/SojoudInBlackInCar1.jpg" alt="لقطة مميزة">
+                </div>
+                <p class="memory-caption">بكل مرة بشوفك… بحس انو انا احظظ انسان بالعالمممممم</p>
+            </div>
+            
+            <!-- Memory Page 3 -->
+            <div class="memory-page" data-page="3">
+                <h2 class="memory-title">ولا شوفلي هاييييي 💕</h2>
+                <div class="memory-single">
+                    <img src="assets/memories/SojoudAngel.png" alt="أكثر شي">
+                </div>
+                <p class="memory-caption">انتي ملاك ولا شنوووووووووو؟؟؟؟؟؟</p>
+            </div>
+            
+            <!-- Memory Page 4 -->
+            <div class="memory-page" data-page="4">
+                <h2 class="memory-title">كل صورة بتخليني احمد الله انك بحياتي ✨</h2>
+                <p class="memory-subtitle">قولي ما شاء الله بلاش تحسديها!</p>
+                <div class="memory-grid memory-grid-large">
+                    <div class="memory-item"><img src="assets/memories/Sojoud1.jpg" alt="تفصيل 1"></div>
+                    <div class="memory-item"><img src="assets/memories/Sojoud2.JPG" alt="تفصيل 2"></div>
+                    <div class="memory-item"><img src="assets/memories/Sojoud6.jpeg" alt="تفصيل 3"></div>
+                    <div class="memory-item"><img src="assets/memories/Sojoud4.JPG" alt="تفصيل 4"></div>
+                    <div class="memory-item"><img src="assets/memories/Sojoud5.jpeg" alt="تفصيل 5"></div>
+                    <div class="memory-item"><img src="assets/memories/Sojoud3.JPG" alt="تفصيل 6"></div>
+                </div>
+            </div>
+            
+            <!-- Memory Navigation -->
+            <div class="memory-nav">
+                <button class="btn btn-secondary" id="btn-memory-prev" disabled>السابق</button>
+                <span class="memory-dots">
+                    <span class="dot active" data-dot="1"></span>
+                    <span class="dot" data-dot="2"></span>
+                    <span class="dot" data-dot="3"></span>
+                    <span class="dot" data-dot="4"></span>
+                </span>
+                <button class="btn btn-primary" id="btn-memory-next">التالي</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SCREEN 4: Game ===== -->
+    <section id="screen-game" class="screen">
+        
+        <!-- Pre-game Instructions -->
+        <div class="card card-game" id="game-intro">
+            <h2 class="game-title">لعبة سريعة! 💘</h2>
+            <ul class="game-rules">
+                <li>قدامك <strong>15 ثانية</strong></li>
+                <li>اضغطي على القلوب عشان تجمعي نقاط</li>
+                <li>الهدف: اجمعي <strong>15 قلب</strong> قبل انتهاء الوقت</li>
+            </ul>
+            <button class="btn btn-primary" id="btn-start-game">ابدأ اللعبة</button>
+        </div>
+        
+        <!-- Game Area -->
+        <div id="game-area" class="game-area hidden">
+            <div class="game-hud">
+                <div class="hud-item">
+                    <span class="hud-label">الوقت:</span>
+                    <span class="hud-value" id="game-time">15</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">النقاط:</span>
+                    <span class="hud-value"><span id="game-score">0</span>/15</span>
+                </div>
+            </div>
+            <div id="game-field" class="game-field"></div>
+            <div id="game-message" class="game-message hidden"></div>
+        </div>
+        
+        <!-- Game Result -->
+        <div class="card card-game hidden" id="game-result">
+            <h2 class="game-title" id="result-title"></h2>
+            <p class="game-text" id="result-text"></p>
+            <div class="buttons-row">
+                <button class="btn btn-primary hidden" id="btn-game-next" data-navigate="screen-quiz">التالي</button>
+                <button class="btn btn-primary hidden" id="btn-retry">إعادة المحاولة</button>
+                <button class="btn btn-secondary hidden" id="btn-skip" data-navigate="screen-quiz">تخطي</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SCREEN 5: Quiz ===== -->
+    <section id="screen-quiz" class="screen">
+        <div class="card card-quiz">
+            <h2 class="quiz-title">سؤال أخير 😌</h2>
+            <p class="quiz-question">ماذا يلقّب يحيى سوسو؟</p>
+            
+            <div class="quiz-options" id="quiz-options">
+                <button class="quiz-option" data-answer="الأميرة">البكمي</button>
+                <button class="quiz-option" data-answer="الملكة">الملكة</button>
+                <button class="quiz-option" data-answer="الوزيرة">عبد الفتاح السيسي</button>
+                <button class="quiz-option" data-answer="القائدة">القائدة</button>
+            </div>
+            
+            <div id="quiz-feedback" class="quiz-feedback hidden"></div>
+            <button class="btn btn-primary hidden" id="btn-quiz-next" data-navigate="screen-final">الختام</button>
+        </div>
+    </section>
+
+    <!-- ===== SCREEN 6: Final ===== -->
+    <section id="screen-final" class="screen">
+        <div class="card card-final">
+            <h1 class="headline">آخر شيء… 💗</h1>
+            <p class="final-text">
+                انا رقاصة…<br>
+                ههههههههه مقلب بمزح <br>
+                سجود، حاب اقلك انو وجودك عندي نعمة.<br>
+                لو الف العالم كلو مش راح الاقي حدا بمواصفاتك، انتي بيرفكتتتتتتتتت بكلشي <br>
+                بتمنى تكون المفاجئة الصغيرة عجبتك، وأخيرا..
+                <strong>الحمدلله إنك بحياتي يا سجود.</strong>
+            </p>
+            <div class="buttons-row">
+                <button class="btn btn-primary" data-navigate="screen-welcome" id="btn-restart">إعادة من البداية</button>
+                <button class="btn btn-secondary" id="btn-download">تحميل ذكرى 💕</button>
+            </div>
+        </div>
+        
+        <!-- Celebratory hearts -->
+        <div class="final-hearts" aria-hidden="true">
+            <span>💗</span><span>💕</span><span>💗</span><span>💕</span><span>💗</span>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
