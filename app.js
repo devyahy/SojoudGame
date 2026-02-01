@@ -464,11 +464,7 @@ btnDownload.addEventListener('click', () => {
     const message = `
 💗 رسالة من ${CONFIG.hisName} إلى ${CONFIG.herName} 💗
 
-أنا ما بنيت الموقع عشان سؤال…
-بنيته عشان أقولك: وجودك عندي نعمة.
-الحمدلله إنك بحياتي يا ${CONFIG.herName}.
-
-💕 مع كل الحب 💕
+ذكرى شو اللي بدك تحمليها عزيزتي بس ضفت ها الزر لانو حلو يكون زرين مش واحد
     `.trim();
 
     // Try to copy to clipboard
@@ -537,3 +533,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ===== DEBUG (remove in production) =====
 // window.DEBUG = { state, navigateTo, CONFIG };
+
